@@ -14,13 +14,14 @@ public class ChatController {
 
     private ChatService chatservice;
 
-    public ChatController(ChatService chatservice){
-        this.chatservice= chatservice ;
+    public ChatController(ChatService chatservice) {
+        this.chatservice = chatservice;
     }
 
     @GetMapping("/chat")
-    public String chat(@RequestParam String message){
-        return chatservice.getResponse(message) ;
+    public String chat(@RequestParam String message) {
+        return chatservice.getResponse(message);
 
     }
 
+}
